@@ -64,23 +64,6 @@ get_header();
                         <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
                         ?>
-                        <?php
-                        $business_form_breadcrump_option = business_form_get_option('business_form_breadcrumb_setting_option');
-
-                        if ($business_form_breadcrump_option == "enable") {
-                            ?>
-
-                            <div class="breadcrumbs">
-                                <div class="container">
-                                    <div class="breadcrumb-trail breadcrumbs" arial-label="Breadcrumbs" role="navigation">
-                                        <ol class="breadcrumb trail-items">
-                                            <li><?php breadcrumb_trail(); ?></li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-
                     </header>
                 </div>
             </div>

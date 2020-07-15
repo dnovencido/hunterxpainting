@@ -44,30 +44,13 @@ get_header();
 
             ?>
 
-
             <div class="inner-header-banner overlay bg-img"
                  style="background-image: url(<?php echo esc_url($business_form_header_style); ?>);">
                 <div class="container">
                     <header class="section-header">
-                        <h3 class="entry-title"><?php printf(esc_html__('Search Results for: %s', 'business-form'), '<span>' . get_search_query() . '</span>'); ?></h3>
-
                         <?php
-                        $business_form_breadcrump_option = business_form_get_option('business_form_breadcrumb_setting_option');
-
-                        if ($business_form_breadcrump_option == "enable") {
-                            ?>
-
-                            <div class="breadcrumbs">
-                                <div class="container">
-                                    <div class="breadcrumb-trail breadcrumbs" arial-label="Breadcrumbs" role="navigation">
-                                        <ol class="breadcrumb trail-items">
-                                            <li><?php breadcrumb_trail(); ?></li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
-
+                        the_archive_title( '<h3>', '</h3>' );
+                        ?>
                     </header>
                 </div>
             </div>
