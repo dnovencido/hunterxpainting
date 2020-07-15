@@ -9,4 +9,4 @@ Website for hunterxpainting
 <pre>git remote add origin https://github.com/dnovencido/hunterxpainting.git </pre>
 4. Pull the code
 <pre>git pull origin master</pre>
-5. Import database to your mysql server
+5. Import database from db folder to your mysql server 
